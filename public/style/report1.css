@@ -1,0 +1,90 @@
+ 
+
+   
+input[type="text"]{
+    display:none;
+}
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+     justify-content: space-between;
+  }
+  
+  .container > div {
+    margin-bottom: 10px;
+  }
+  
+  .container > div span {
+    font-weight: bold;
+  }
+  
+  /* Test container styles */
+  .container2 {
+     display: flex;
+     justify-content: center;
+     gap: 4px;
+    /* margin: 5px 658px; */
+  }
+  
+  /* Container2 styles */
+  .container3 {
+     height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    /* border: 2px solid red; */
+
+  }
+  
+  /* Form styles */
+  form {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width:943px) {
+     .container-res{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:5px
+     }
+     
+    
+  }
+  

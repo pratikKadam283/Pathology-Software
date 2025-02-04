@@ -1,0 +1,103 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+body{
+  overflow-y: hidden;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  padding-top:30px ;
+  padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+   
+  max-width: 1080px;
+  margin: 0px auto;
+}
+
+.nav__list{
+  display: flex;
+  list-style: none;
+  max-width: 1000px;
+  gap:30px
+}
+.nav__link{
+  border: none;
+  background-color: white;
+  font-family: "Syne", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.main{
+  position: relative;
+}
+.main__bg{
+  position: absolute;
+  z-index: -20;
+  top:0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#titlePath{
+ padding-top: 5%;
+ text-align: center;
+ font-family: "Lilita One", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ color: #a04460;
+ font-size: 50px;
+
+}
+
+.hamburger{
+  position:absolute;
+  right: 10px;
+  top: 22px;
+  z-index: 20;
+  display: none;
+}
+.line{
+  width: 30px;
+  height: 5px;
+  background-color: rgba(32, 30, 30, 0.453);
+}
+
+.header{
+  min-height: 60px;
+}
+
+@media (max-width:840px) {
+   
+  .navbar-res{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav__list-res{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-res{
+    display: none;
+  }
+  
+  .hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+  }
+}
