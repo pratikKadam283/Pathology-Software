@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+   <html lang="en"> 
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lilita+One&display=swap" rel="stylesheet">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="./style/home.css">
+
+      <title> Home</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id=" ">
+         <nav class=" container navbar-res  header-res">
+           
+
+              <form action="/" >
+                  <input type="submit" value="log out" id="logout" class="nav__link">
+              </form>
+               <ul class="nav__list nav__list-res">
+                  <li class="nav__item">
+                      <form action="/entry" >
+                        <input type="submit" value="New Entry" class="nav__link">
+                     </form>
+                  </li>
+
+                  <li class="nav__item">
+                     <form action="/history">
+                        <input type="submit" value="View Entries" class="nav__link">
+                     </form>                 
+                   </li>
+
+                  <li class="nav__item">
+                     <form action="/reports">
+                        <input type="submit" value="Reports" class="nav__link">
+                     </form>
+                  </li>
+
+                  <li class="nav__item">
+                     <form action="/doctorEntry">
+                        <input type="submit" value="Add Doctors" class="nav__link">
+                     </form>
+                   </li>
+
+                  <li class="nav__item">
+                     <form action="/viewDoctors">
+                        <input type="submit" value="View Doctors" class="nav__link">
+                     </form>
+                   </li>
+                  <li class="nav__item">
+                     <form action="/viewTests">
+                        <input type="submit" value="View Tests" class="nav__link">
+                     </form>                 
+                  </li>
+                 <li class="nav__item">
+                     <form action="/bill">
+                     <input type="submit" value="Bill" class="nav__link">
+                  </form>
+                 </li>
+               </ul>
+ 
+         </nav>
+         <div class="hamburger">
+            <p class="line"></p>
+            <p class="line"></p>
+            <p class="line"></p>
+         </div>
+           
+      </header>
+ 
+    
+
+
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <img src="./images/home_bg.png" alt="image" class="main__bg main__bg-res">
+         <h1 id="titlePath">Welcome to
+            <%= labname %>
+        </h1>
+         
+      </main> 
+       
+      
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="./js/home.js"></script>
+
+      <script>
+         //  let logout=document.getElementById('logout');
+         //  logout.addEventListener('click',()=>{
+         //    alert("Logout Successfully!!!")
+         //  })
+      </script>
+   </body>
+</html>
